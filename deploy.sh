@@ -56,25 +56,13 @@ killTomcat
 
 # 删除原有工程
 
-rm -rf $TOMCAT_APP_PATH/webapps/ROOT
-
-rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
-
-rm -f $TOMCAT_APP_PATH/webapps/order.war
+rm -rf $TOMCAT_APP_PATH/webapps/ROOT/*.*
 
 
 
 # 复制新的工程
 
-cp $PROJ_PATH/MavenTest/target/MavenTest.war $TOMCAT_APP_PATH/webapps/
-
-
-
-cd $TOMCAT_APP_PATH/webapps/
-
-mv order.war ROOT.war
-
-
+cp -r $PROJ_PATH/MavenTest/target/.  $TOMCAT_APP_PATH/webapps/ROOT
 
 # 启动Tomcat
 
