@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 
 #编译+部署order站点
 
@@ -56,9 +56,7 @@ killTomcat
 
 # 删除原有工程
 
-rm -rf $TOMCAT_APP_PATH/webapps/ROOT/*.*
-
-
+rm -rf $TOMCAT_APP_PATH/webapps/ROOT/*
 
 # 复制新的工程
 
