@@ -1,6 +1,6 @@
 ﻿#!/usr/bin/env bash
 
-#编译+部署order站点
+#编译+部署maventest站点
 
 
 
